@@ -1,0 +1,16 @@
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Debug\net8.0-windows\PFMEA_Action_Priority.Form1.resources
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Debug\net8.0-windows\PFMEA Action Priority.vbproj.GenerateResource.cache
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Debug\net8.0-windows\PFMEA Action Priority.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Debug\net8.0-windows\PFMEA Action Priority.AssemblyInfoInputs.cache
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Debug\net8.0-windows\PFMEA Action Priority.AssemblyInfo.vb
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Debug\net8.0-windows\PFMEA Action Priority.vbproj.CoreCompileInputs.cache
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Debug\net8.0-windows\PFMEA Action Priority.exe
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Debug\net8.0-windows\PFMEA Action Priority.deps.json
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Debug\net8.0-windows\PFMEA Action Priority.runtimeconfig.json
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Debug\net8.0-windows\PFMEA Action Priority.dll
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Debug\net8.0-windows\PFMEA Action Priority.pdb
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Debug\net8.0-windows\PFMEA Action Priority.dll
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Debug\net8.0-windows\refint\PFMEA Action Priority.dll
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Debug\net8.0-windows\PFMEA Action Priority.pdb
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Debug\net8.0-windows\PFMEA Action Priority.genruntimeconfig.cache
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Debug\net8.0-windows\ref\PFMEA Action Priority.dll
