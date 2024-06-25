@@ -1,0 +1,17 @@
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Release\net8.0-windows8.0\PFMEA Action Priority.exe
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Release\net8.0-windows8.0\PFMEA Action Priority.deps.json
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Release\net8.0-windows8.0\PFMEA Action Priority.runtimeconfig.json
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Release\net8.0-windows8.0\PFMEA Action Priority.dll
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Release\net8.0-windows8.0\PFMEA Action Priority.pdb
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Release\net8.0-windows8.0\PFMEA_Action_Priority.Form1.resources
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Release\net8.0-windows8.0\PFMEA Action Priority.vbproj.GenerateResource.cache
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Release\net8.0-windows8.0\PFMEA Action Priority.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Release\net8.0-windows8.0\PFMEA Action Priority.AssemblyInfoInputs.cache
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Release\net8.0-windows8.0\PFMEA Action Priority.AssemblyInfo.vb
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Release\net8.0-windows8.0\PFMEA Action Priority.vbproj.CoreCompileInputs.cache
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Release\net8.0-windows8.0\PFMEA Action Priority.dll
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Release\net8.0-windows8.0\refint\PFMEA Action Priority.dll
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Release\net8.0-windows8.0\PFMEA Action Priority.pdb
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Release\net8.0-windows8.0\PFMEA Action Priority.genruntimeconfig.cache
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Release\net8.0-windows8.0\ref\PFMEA Action Priority.dll
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\obj\Release\net8.0-windows8.0\PFMEA_Action_Priority.Resources.resources
