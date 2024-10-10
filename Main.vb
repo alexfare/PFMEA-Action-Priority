@@ -1,5 +1,11 @@
 ﻿Public Class Form1
 
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        vControl.Text = My.Settings.Version
+        lblResult.Text = ""
+        Me.StartPosition = FormStartPosition.CenterScreen
+    End Sub
+
     Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
         Dim severity, occurrence, detection As Integer
 
@@ -12,7 +18,7 @@
         Dim riskLevel As String = ""
         Dim riskColor As Color = Color.Black
 
-        ' Risk level calculation logic
+        ' Risk level calculation logic based on updated Action Priority matrix
         If severity = 1 Then
             riskLevel = "LOW"
             riskColor = Color.Green
@@ -93,19 +99,18 @@
                 riskLevel = "LOW"
                 riskColor = Color.Green
             ElseIf occurrence >= 2 AndAlso occurrence <= 3 Then
-                If detection >= 1 AndAlso detection <= 4 Then
-                    riskLevel = "LOW"
-                    riskColor = Color.Green
-                ElseIf detection >= 5 AndAlso detection <= 6 Then
+                If detection >= 1 AndAlso detection <= 10 Then
+                    riskLevel = "MEDIUM"
+                    riskColor = Color.Yellow
+                End If
+            ElseIf occurrence >= 4 AndAlso occurrence <= 10 Then
+                If detection = 1 Then
                     riskLevel = "MEDIUM"
                     riskColor = Color.Yellow
                 Else
                     riskLevel = "HIGH"
                     riskColor = Color.Red
                 End If
-            ElseIf occurrence >= 4 AndAlso occurrence <= 10 Then
-                riskLevel = "HIGH"
-                riskColor = Color.Red
             Else
                 riskLevel = "LOW"
                 riskColor = Color.Green
