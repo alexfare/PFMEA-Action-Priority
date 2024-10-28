@@ -1,0 +1,8 @@
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Release\net8.0-windows8.0\publish\win-x86\PFMEA Action Priority.pdb
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Release\net8.0-windows8.0\publish\win-x86\PFMEA Action Priority.dll.config
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Release\net8.0-windows8.0\publish\win-x86\D3DCompiler_47_cor3.dll
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Release\net8.0-windows8.0\publish\win-x86\PenImc_cor3.dll
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Release\net8.0-windows8.0\publish\win-x86\PresentationNative_cor3.dll
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Release\net8.0-windows8.0\publish\win-x86\vcruntime140_cor3.dll
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Release\net8.0-windows8.0\publish\win-x86\wpfgfx_cor3.dll
+C:\Users\alex.fare\OneDrive\!Projects\VisualBasic\PFMEA Action Priority\bin\Release\net8.0-windows8.0\publish\win-x86\PFMEA Action Priority.exe

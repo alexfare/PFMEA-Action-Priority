@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "zAxEB+VbRbo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\alex.fare\\OneDrive\\!Projects\\VisualBasic\\PFMEA Action Priority\\PFMEA Action Priority.vbproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alex.fare\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.8\\microsoft.net.illink.tasks.8.0.8.nupkg.sha512",
+    "C:\\Users\\alex.fare\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.8\\microsoft.netcore.app.runtime.win-x86.8.0.8.nupkg.sha512",
+    "C:\\Users\\alex.fare\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\8.0.8\\microsoft.windowsdesktop.app.runtime.win-x86.8.0.8.nupkg.sha512",
+    "C:\\Users\\alex.fare\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.8\\microsoft.aspnetcore.app.runtime.win-x86.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
