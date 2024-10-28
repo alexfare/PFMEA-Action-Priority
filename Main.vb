@@ -1,4 +1,6 @@
 ﻿Public Class Form1
+    Dim riskLevel As String
+    Dim riskColor As Color = Color.Black
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         vControl.Text = My.Settings.Version
@@ -6,7 +8,7 @@
         Me.StartPosition = FormStartPosition.CenterScreen
     End Sub
 
-    Private Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
+    Public Sub btnCalculate_Click(sender As Object, e As EventArgs) Handles btnCalculate.Click
         Dim severity, occurrence, detection As Integer
 
         ' Input validation
@@ -15,107 +17,61 @@
             Return
         End If
 
-        Dim riskLevel As String = ""
-        Dim riskColor As Color = Color.Black
+        riskLevel = ""
+        riskColor = Color.Black
 
-        ' Risk level calculation logic based on updated Action Priority matrix
-        If severity = 1 Then
-            riskLevel = "LOW"
-            riskColor = Color.Green
-        ElseIf severity >= 2 AndAlso severity <= 3 Then
-            If occurrence >= 8 AndAlso occurrence <= 10 AndAlso detection >= 5 AndAlso detection <= 10 Then
-                riskLevel = "MEDIUM"
-                riskColor = Color.Yellow
-            Else
-                riskLevel = "LOW"
-                riskColor = Color.Green
-            End If
-        ElseIf severity >= 4 AndAlso severity <= 6 Then
-            If occurrence >= 4 AndAlso occurrence <= 5 Then
-                If detection >= 7 AndAlso detection <= 10 Then
-                    riskLevel = "MEDIUM"
-                    riskColor = Color.Yellow
+        ' Revised risk level calculation logic based on PFMEA table
+        Select Case severity
+            Case 9 To 10
+                If occurrence >= 8 AndAlso detection = 1 Then
+                    RiskHigh()
+                ElseIf occurrence >= 4 AndAlso occurrence <= 10 AndAlso detection <= 10 Then
+                    RiskHigh()
+                ElseIf occurrence >= 2 AndAlso occurrence <= 3 AndAlso detection >= 1 AndAlso detection <= 10 Then
+                    RiskMedium()
                 Else
-                    riskLevel = "LOW"
-                    riskColor = Color.Green
+                    RiskLow()
                 End If
-            ElseIf occurrence >= 6 AndAlso occurrence <= 7 Then
-                If detection >= 2 AndAlso detection <= 10 Then
-                    riskLevel = "MEDIUM"
-                    riskColor = Color.Yellow
+
+            Case 7 To 8
+                If occurrence >= 8 AndAlso detection >= 1 AndAlso detection <= 10 Then
+                    RiskHigh()
+                ElseIf occurrence >= 6 AndAlso detection = 1 Then
+                    RiskHigh()
+                ElseIf occurrence >= 4 AndAlso detection >= 7 Then
+                    RiskHigh()
+                ElseIf occurrence >= 2 AndAlso detection >= 5 Then
+                    RiskMedium()
                 Else
-                    riskLevel = "LOW"
-                    riskColor = Color.Green
+                    RiskLow()
                 End If
-            ElseIf occurrence >= 8 AndAlso occurrence <= 10 Then
-                If detection >= 1 AndAlso detection <= 3 Then
-                    riskLevel = "MEDIUM"
-                    riskColor = Color.Yellow
+
+            Case 4 To 6
+                If occurrence >= 8 AndAlso detection >= 4 Then
+                    RiskMedium()
+                ElseIf occurrence >= 4 AndAlso detection >= 7 Then
+                    RiskMedium()
+                ElseIf occurrence <= 3 AndAlso detection <= 3 Then
+                    RiskLow()
                 Else
-                    riskLevel = "HIGH"
-                    riskColor = Color.Red
+                    RiskLow()
                 End If
-            Else
-                riskLevel = "LOW"
-                riskColor = Color.Green
-            End If
-        ElseIf severity >= 7 AndAlso severity <= 8 Then
-            If occurrence = 1 Then
-                riskLevel = "LOW"
-                riskColor = Color.Green
-            ElseIf occurrence >= 2 AndAlso occurrence <= 3 Then
-                If detection >= 5 AndAlso detection <= 10 Then
-                    riskLevel = "MEDIUM"
-                    riskColor = Color.Yellow
+
+            Case 2 To 3
+                If occurrence >= 8 AndAlso detection >= 5 Then
+                    RiskMedium()
+                ElseIf occurrence <= 7 AndAlso detection <= 4 Then
+                    RiskLow()
                 Else
-                    riskLevel = "LOW"
-                    riskColor = Color.Green
+                    RiskLow()
                 End If
-            ElseIf occurrence >= 4 AndAlso occurrence <= 5 Then
-                If detection >= 7 AndAlso detection <= 10 Then
-                    riskLevel = "HIGH"
-                    riskColor = Color.Red
-                Else
-                    riskLevel = "MEDIUM"
-                    riskColor = Color.Yellow
-                End If
-            ElseIf occurrence >= 6 AndAlso occurrence <= 7 Then
-                If detection = 1 Then
-                    riskLevel = "MEDIUM"
-                    riskColor = Color.Yellow
-                Else
-                    riskLevel = "HIGH"
-                    riskColor = Color.Red
-                End If
-            ElseIf occurrence >= 8 AndAlso occurrence <= 10 Then
-                riskLevel = "HIGH"
-                riskColor = Color.Red
-            Else
-                riskLevel = "LOW"
-                riskColor = Color.Green
-            End If
-        ElseIf severity >= 9 AndAlso severity <= 10 Then
-            If occurrence = 1 Then
-                riskLevel = "LOW"
-                riskColor = Color.Green
-            ElseIf occurrence >= 2 AndAlso occurrence <= 3 Then
-                If detection >= 1 AndAlso detection <= 10 Then
-                    riskLevel = "MEDIUM"
-                    riskColor = Color.Yellow
-                End If
-            ElseIf occurrence >= 4 AndAlso occurrence <= 10 Then
-                If detection = 1 Then
-                    riskLevel = "MEDIUM"
-                    riskColor = Color.Yellow
-                Else
-                    riskLevel = "HIGH"
-                    riskColor = Color.Red
-                End If
-            Else
-                riskLevel = "LOW"
-                riskColor = Color.Green
-            End If
-        End If
+
+            Case 1
+                RiskLow()
+
+            Case Else
+                RiskLow()
+        End Select
 
         ' Display the result
         lblResult.Text = riskLevel
@@ -124,5 +80,20 @@
         txtOccurrence.Text = ""
         txtDetection.Text = ""
         txtSeverity.Focus()
+    End Sub
+
+    Private Sub RiskLow()
+        riskLevel = "LOW"
+        riskColor = Color.Green
+    End Sub
+
+    Private Sub RiskMedium()
+        riskLevel = "MEDIUM"
+        riskColor = Color.Orange
+    End Sub
+
+    Private Sub RiskHigh()
+        riskLevel = "HIGH"
+        riskColor = Color.Red
     End Sub
 End Class

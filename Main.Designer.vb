@@ -26,13 +26,13 @@ Partial Class Form1
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
-        lblResult = New Label()
         btnCalculate = New Button()
         txtSeverity = New TextBox()
         txtOccurrence = New TextBox()
         txtDetection = New TextBox()
         Panel1 = New Panel()
         vControl = New Label()
+        lblResult = New Label()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -62,16 +62,6 @@ Partial Class Form1
         Label3.Size = New Size(58, 15)
         Label3.TabIndex = 5
         Label3.Text = "Detection"
-        ' 
-        ' lblResult
-        ' 
-        lblResult.AutoSize = True
-        lblResult.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        lblResult.Location = New Point(165, 74)
-        lblResult.Name = "lblResult"
-        lblResult.Size = New Size(49, 21)
-        lblResult.TabIndex = 6
-        lblResult.Text = "NULL"
         ' 
         ' btnCalculate
         ' 
@@ -116,24 +106,34 @@ Partial Class Form1
         Panel1.Controls.Add(lblResult)
         Panel1.Location = New Point(12, 12)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(489, 110)
+        Panel1.Size = New Size(421, 110)
         Panel1.TabIndex = 11
         ' 
         ' vControl
         ' 
         vControl.AutoSize = True
-        vControl.Location = New Point(430, 80)
+        vControl.Location = New Point(348, 80)
         vControl.Name = "vControl"
         vControl.Size = New Size(53, 15)
         vControl.TabIndex = 12
         vControl.Text = "vControl"
+        ' 
+        ' lblResult
+        ' 
+        lblResult.AutoSize = True
+        lblResult.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lblResult.Location = New Point(165, 74)
+        lblResult.Name = "lblResult"
+        lblResult.Size = New Size(49, 21)
+        lblResult.TabIndex = 6
+        lblResult.Text = "NULL"
         ' 
         ' Form1
         ' 
         AcceptButton = btnCalculate
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(507, 128)
+        ClientSize = New Size(440, 128)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.Fixed3D
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
@@ -150,12 +150,13 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents lblResult As Label
+    Friend WithEvents ToolStripStatusLabel1 As Label
     Friend WithEvents btnCalculate As Button
     Friend WithEvents txtSeverity As TextBox
     Friend WithEvents txtOccurrence As TextBox
     Friend WithEvents txtDetection As TextBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents vControl As Label
+    Friend WithEvents lblResult As Label
 
 End Class
