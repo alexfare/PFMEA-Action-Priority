@@ -15,11 +15,11 @@ Imports System
 Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Alex Fare"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Release"),  _
- Assembly: System.Reflection.AssemblyFileVersionAttribute("1.6"),  _
+ Assembly: System.Reflection.AssemblyFileVersionAttribute("1.7"),  _
  Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("PFMEA Action Priority"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("PFMEA Action Priority"),  _
- Assembly: System.Reflection.AssemblyVersionAttribute("1.6"),  _
+ Assembly: System.Reflection.AssemblyVersionAttribute("1.7"),  _
  Assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows8.0"),  _
  Assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows8.0")> 
 
