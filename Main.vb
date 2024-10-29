@@ -23,53 +23,98 @@
         ' Revised risk level calculation logic based on PFMEA table
         Select Case severity
             Case 9 To 10
-                If occurrence >= 8 AndAlso detection = 1 Then
-                    RiskHigh()
-                ElseIf occurrence >= 4 AndAlso occurrence <= 10 AndAlso detection <= 10 Then
-                    RiskHigh()
-                ElseIf occurrence >= 2 AndAlso occurrence <= 3 AndAlso detection >= 1 AndAlso detection <= 10 Then
-                    RiskMedium()
-                Else
-                    RiskLow()
-                End If
+                Select Case occurrence
+                    Case 6 To 10
+                        RiskHigh()
+                    Case 4 To 5
+                        Select Case detection
+                            Case 2 To 10
+                                RiskHigh()
+                            Case 1
+                                RiskMedium()
+                        End Select
+                    Case 2 To 3
+                        Select Case detection
+                            Case 7 To 10
+                                RiskHigh()
+                            Case 5 To 6
+                                RiskMedium()
+                            Case 1 To 4
+                                RiskLow()
+                        End Select
+                    Case 1
+                        RiskLow()
+                End Select 'Sev 9-10
 
             Case 7 To 8
-                If occurrence >= 8 AndAlso detection >= 1 AndAlso detection <= 10 Then
-                    RiskHigh()
-                ElseIf occurrence >= 6 AndAlso detection = 1 Then
-                    RiskHigh()
-                ElseIf occurrence >= 4 AndAlso detection >= 7 Then
-                    RiskHigh()
-                ElseIf occurrence >= 2 AndAlso detection >= 5 Then
-                    RiskMedium()
-                Else
-                    RiskLow()
-                End If
+                Select Case occurrence
+                    Case 8 To 10
+                        RiskHigh()
+                    Case 6 To 7
+                        Select Case detection
+                            Case 2 To 10
+                                RiskHigh()
+                            Case 1
+                                RiskMedium()
+                        End Select
+                    Case 4 To 5
+                        Select Case detection
+                            Case 7 To 10
+                                RiskHigh()
+                            Case 1 To 6
+                                RiskMedium()
+                        End Select
+                    Case 2 To 3
+                        Select Case detection
+                            Case 5 To 10
+                                RiskMedium()
+                            Case 1 To 4
+                                RiskLow()
+                        End Select
+                    Case 1
+                        RiskLow()
+                End Select 'Sev 7-8
 
             Case 4 To 6
-                If occurrence >= 8 AndAlso detection >= 4 Then
-                    RiskMedium()
-                ElseIf occurrence >= 4 AndAlso detection >= 7 Then
-                    RiskMedium()
-                ElseIf occurrence <= 3 AndAlso detection <= 3 Then
-                    RiskLow()
-                Else
-                    RiskLow()
-                End If
+                Select Case occurrence
+                    Case 8 To 10
+                        Select Case detection
+                            Case 5 To 10
+                                RiskHigh()
+                            Case 1 To 3
+                                RiskMedium()
+                        End Select
+                    Case 6 To 7
+                        Select Case detection
+                            Case 2 To 10
+                                RiskMedium()
+                            Case 1
+                                RiskLow()
+                        End Select
+                    Case 4 To 5
+                        Select Case detection
+                            Case 7 To 10
+                                RiskMedium()
+                            Case 1 To 6
+                                RiskLow()
+                        End Select
+                    Case 1 To 3
+                        RiskLow()
+                End Select 'Sev 4-6
 
             Case 2 To 3
-                If occurrence >= 8 AndAlso detection >= 5 Then
-                    RiskMedium()
-                ElseIf occurrence <= 7 AndAlso detection <= 4 Then
-                    RiskLow()
-                Else
-                    RiskLow()
-                End If
-
+                Select Case occurrence
+                    Case 8 To 10
+                        Select Case detection
+                            Case 5 To 10
+                                RiskMedium()
+                            Case 1 To 4
+                                RiskLow()
+                        End Select
+                    Case 1 To 7
+                        RiskLow()
+                End Select 'Sev 2-3
             Case 1
-                RiskLow()
-
-            Case Else
                 RiskLow()
         End Select
 
