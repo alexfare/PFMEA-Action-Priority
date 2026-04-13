@@ -9,8 +9,9 @@
     <MyType>WindowsForms</MyType>
     <ApplicationIcon>app_logo.ico</ApplicationIcon>
     <Authors>Alex Fare</Authors>
-    <AssemblyVersion>1.7</AssemblyVersion>
-    <FileVersion>1.7</FileVersion>
+    <AssemblyVersion>1.10</AssemblyVersion>
+    <FileVersion>1.10</FileVersion>
+    <Copyright>2024 - 2025</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
