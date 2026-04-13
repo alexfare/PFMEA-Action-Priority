@@ -31,7 +31,11 @@ Namespace My
 
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Form1
+            If MainForm Is Nothing Then
+                Me.MainForm = New MainForm()
+            Else
+                Me.MainForm = MainForm
+            End If
         End Sub
     End Class
 End Namespace
